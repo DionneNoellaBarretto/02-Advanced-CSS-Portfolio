@@ -151,7 +151,6 @@ img:hover{
 }
 
 /* Scroll to the top / Scroll to the bottom quick links*/
-
 #myBtn {
   position: fixed; /* Fixed/sticky position */
   bottom: 0; /* Place the button at the bottom of the page */
