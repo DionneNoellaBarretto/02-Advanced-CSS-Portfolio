@@ -1,11 +1,11 @@
 :root{
-  --laptop-background: #b067b9;
+  --laptop-background: #edc0f3;
   --laptop-nav-foot-background: #b380b9;
-  --tablet-background: rgb(105, 136, 221);
+  --tablet-background: rgb(176, 193, 240);
   --tablet-nav-foot: rgb(155, 178, 243);
-  --cellphone-background: rgb(59, 197, 186);
+  --cellphone-background: rgb(145, 236, 229);
   --cellphone-nav-foot: rgb(125, 224, 231);
-  --text-color: #000;
+  --text-color: rgb(48, 47, 47);
 }
 * {
   box-sizing: border-box;
