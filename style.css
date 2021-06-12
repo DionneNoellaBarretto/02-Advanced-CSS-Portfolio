@@ -72,11 +72,12 @@ main {
 }
 
 aside {
-  flex: 40%;
+  flex: 1;
   background-color: var(--laptop-background);
   flex-wrap: wrap;
   text-align: center;
-  content: flex;
+  display: block;
+  padding: 50px;
 }
 
 strong{
@@ -84,8 +85,8 @@ strong{
 }
 
 .me{
-  width:200px;
-  height:200px;
+  width:300px;
+  height:300px;
   object-fit:cover;
   border-radius:50%;
   border: 5px dashed;
@@ -94,13 +95,13 @@ strong{
 }
 
 .google{
-  width:70px;
+  width:150px;
   height:50x;
   object-fit:scale-down;
 }
 
 .rubrik{
-  width:70px;
+  width:150px;
   height:50x;
   object-fit:scale-down;
 }
@@ -120,6 +121,8 @@ strong{
 
 section {
   flex: 60%;
+  display: block;
+  flex-wrap: wrap;
   background: var(--laptop-section-background);
   padding: 10px;
 }
@@ -145,43 +148,41 @@ img:hover{
 }
 
 /* Project Snippets*/
-.projects{
+#Preview_Projects{
   flex: 0 1 100px;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   background-color: rgba(245, 240, 220, 0.479);
   justify-content: space-evenly;
+  align-items:flex-start;
 }
-.HW1,.HW2,.Presentations{
+.HW1,.HW2, .Qwiklabs, .Badges, .Presentations{
   border-style: double;
   border-width: 4px;
   border-color: var(--laptop-nav-foot);
   border-radius: 50px;
+  flex: 0 0 250px;
   transform: rotate(-2deg);
   box-shadow: 3px 3px 2px #aaaaaa;
   margin: 20px;
   padding: 20 auto;
 }
 
-.HW1 header,.HW2 header,.Presentations header {
+.HW1 header,.HW2 header, .Qwiklabs header, .Badges header, .Presentations header {
   width: auto !important;
   border-radius: 50px 50px 0 0;
 }
 
-.HW1,.HW2,.Presentations p {
+.HW1, .HW2, .Qwiklabs, .Badges, .Presentations {
   border-radius: 50px 50px 50px 50px;
   text-align: center;
   text-decoration: underline;
   background-color: rgb(250, 247, 216);
 }
 
-.HW1,.HW2,.Presentations img iframe {
-  width: auto !important;
-}
-
-iframe{
-  border-radius: 50px 50px 50px 50px;
-
+.img, iframe {
+  width: 100%;
+  height: auto;
 }
 
 /* Scroll to the top / Scroll to the bottom quick links*/
@@ -206,8 +207,10 @@ iframe{
 
 /* Tablets - header nav footer changes color */
 @media screen and (max-width: 992px) {
+  
   header, aside {
     background: var(--tablet-background);
+    flex-direction: column;
   }
   nav, footer {
     background-color: var(--tablet-nav-foot);
@@ -215,12 +218,15 @@ iframe{
   }
   h2 span, nav a {
     color: rgb(19, 15, 240) !important;
+    flex-direction: column;
   }
-  .me, .HW1, .HW2, .Presentations{
+  .me, .HW1, .HW2,.Qwiklabs, .Badges, .Presentations{
     border-color: var(--tablet-nav-foot);
+    flex-direction: column;
   }
   section{
     background: var(--tablet-section-background);
+    flex-direction: column;
   }
 }
 
@@ -229,6 +235,18 @@ iframe{
   header,aside {
     background: var(--cellphone-background);
   }
+
+  header, nav{
+    order: 0;
+  }
+aside{
+  order: 1;
+}
+
+#Preview_Projects{
+  order: 3;
+}
+
   nav,footer {
     background-color: var(--cellphone-nav-foot);
     flex-direction: column;
@@ -237,7 +255,7 @@ iframe{
   h2 span, nav a {
     color: rgb(4, 100, 4) !important;
   }
-  .me, .HW1, .HW2, .Presentations{
+  .me, .HW1, .HW2,.Qwiklabs,.Badges .Presentations{
     border-color: var(--cellphone-nav-foot);
   }
   section{
