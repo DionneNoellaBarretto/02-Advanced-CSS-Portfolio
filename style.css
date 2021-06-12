@@ -1,0 +1,134 @@
+:root{
+  --laptop-background: #b067b9;
+  --laptop-nav-foot-background: #b380b9;
+  --tablet-background: rgb(105, 136, 221);
+  --tablet-nav-foot: rgb(155, 178, 243);
+  --cellphone-background: rgb(59, 197, 186);
+  --cellphone-nav-foot: rgb(125, 224, 231);
+  --text-color: #000;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Audiowide", "Sofia", sans-serif;
+  text-decoration: none;
+
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+  background: var(--laptop-background);
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  background-color: var(--laptop-nav-foot-background);
+  text-align: center;
+  justify-content: space-around;
+}
+nav a {
+  color: var(--text-color);
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  flex: 30%;
+  background-color: var(--laptop-background);
+  padding: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  height: 200%;
+}
+
+strong{
+  text-decoration: underline;
+}
+
+.me{
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.google{
+  width:70px;
+  height:50x;
+  object-fit:scale-down;
+}
+
+.rubrik{
+  width:70px;
+  height:50x;
+  object-fit:scale-down;
+}
+
+.brightness:hover {
+  opacity: 0.50; }
+
+
+.link:visited {
+  color: rgb(252, 13, 200);
+}
+.link:hover {
+  color: rgb(90, 88, 89);
+}
+.link:active {
+  color: rgb(0, 97, 17);
+}
+
+section {
+  flex: 70%;
+  background-color: #fff;
+  padding: 10px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background: var(--laptop-nav-foot-background);
+  color: var(--text-color);
+}
+
+/* Image Placeholders */
+.sample-img {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header nav footer changes color */
+@media screen and (max-width: 992px) {
+  header, aside {
+    background: var(--tablet-background);
+  }
+  nav, footer {
+    background-color: var(--tablet-nav-foot);
+  }
+  }
+
+/* Cellphones - header navbar footer changes color */
+@media screen and (max-width: 768px) {
+  header,aside {
+    background: var(--cellphone-background);
+  }
+  nav,footer {
+    background-color: var(--cellphone-nav-foot);
+  }
+}
+
