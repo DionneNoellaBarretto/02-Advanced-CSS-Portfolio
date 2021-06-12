@@ -33,6 +33,14 @@ header {
   color: var(--text-color);
 }
 
+h5{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12.5px;
+}
+
+
 nav {
   display: flex;
   background-color: var(--laptop-nav-foot);
