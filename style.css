@@ -30,6 +30,7 @@ nav {
   background-color: var(--laptop-nav-foot-background);
   text-align: center;
   justify-content: space-around;
+  flex: 60%
 }
 nav a {
   color: var(--text-color);
@@ -77,7 +78,6 @@ strong{
 .brightness:hover {
   opacity: 0.50; }
 
-
 .link:visited {
   color: rgb(252, 13, 200);
 }
@@ -99,6 +99,18 @@ footer {
   text-align: center;
   background: var(--laptop-nav-foot-background);
   color: var(--text-color);
+  display: inline-block;
+  width: 100%;
+}
+
+footer img{
+  border-radius: 25px;
+  padding: 3px;
+  width: 100px;
+}
+
+img:hover{
+  border: 0.9px dotted rgb(58, 57, 57);
 }
 
 /* Image Placeholders */
