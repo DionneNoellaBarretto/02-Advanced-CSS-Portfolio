@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
   </head>
+
   <body>
     <!-- Header -->
     <header>
       <img id="home-icon" src="./home icon.png">
-      <h1> Hello, I'm DNB. </h1>
+            <h1> Hello, I'm DNB. </h1>
 			<h2>I am passionate about<span style="color:yellow"> HTML, CSS, GIT & everything Cloud</span></h2>
     </header>
 
@@ -38,16 +39,18 @@
           squished on a smaller screen?
         </p>
       </section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top &#129045; </button>
       <aside>
         <figure> <img class="me" src="C:\Users\denro\Google Drive\DNB Google Drive\coding_bootcamp_UNC 2021\02-Advanced-CSS-Portfolio\dnb.jpg" alt="Dionne Noella Barretto"/>
         </figure>
-        <h2 id="About-Me">About Me</h2>
+        <h3 id="About-Me">About Me</h3>
         <p> I am Dionne Noella a learning enthusiast, currently employed at <img class="google brightness" src="C:\Users\denro\Google Drive\DNB Google Drive\coding_bootcamp_UNC 2021\02-Advanced-CSS-Portfolio\Google.gif" alt="Google Logo"/> as a Senior Solutions Consultant (TAM) in the Google Cloud division. Previously I was at <img class="rubrik brightness" src="C:\Users\denro\Google Drive\DNB Google Drive\coding_bootcamp_UNC 2021\02-Advanced-CSS-Portfolio\Rubrik_Logo.svg" alt="Rubrik Image"/>, serving in the capacity of a Customer Experience Manager for the largest enterprise and strategic accounts in the data management domain and previous to that was with <strong class="link"><a href="https://www.vmware.com/">VMware</a></strong>, where I worked as a Horizon Cloud Escalation Manager in the space of Desktop and Application as a Service. 
         <br>
         <br>
         My interests are, along the lines of research & development that constitute the big picture of an “Automated Planet” in association with testing, suggesting solutions that could/ will be carried out in years to come which all funnel down into the domain of Cloud Management, Policy and its path of Migration:'The Way to Rise'!
         </p>
       </aside>
+
     </main>
 
     <!-- Footer -->
@@ -57,8 +60,31 @@
         <a href="https://github.com/DionneNoellaBarretto" target="_blank"><img src="./GitHub-logo.png" alt="GitHub image" style="display: inline; margin: 0 5px;"></a>
         <a href="C:\Users\denro\Google Drive\DNB Google Drive\coding_bootcamp_UNC 2021\02-Advanced-CSS-Portfolio\Contact-Me-Form.html" target="_blank"><img src="./Contact-Me.png" alt="Contact Me image" style="display: inline; margin: 0 5px;"></a>
         
-        <h3> &copy; Copyright 2021 | ɖռɮ aka Dionne Noella Barretto </h3>
+        <h4> &copy; Copyright 2021 | ɖռɮ aka Dionne Noella Barretto </h4>
 
     </footer>
   </body>
+
+  <script>
+    //Get to the Top button:
+    mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </html>
+

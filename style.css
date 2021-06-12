@@ -25,7 +25,6 @@
   width: 75px;
 }
 
-
 header {
   margin: 0;
   padding: 10px;
@@ -120,7 +119,8 @@ footer {
 footer img{
   border-radius: 25px;
   padding: 3px;
-  width: 100px;
+  display: inline-block;
+  width: 10%;
 }
 
 img:hover{
@@ -135,6 +135,25 @@ img:hover{
   height: 200px;
   border: 1px solid black;
 }
+
+/* Scroll to the top / Scroll to the bottom quick links*/
+
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 0; /* Place the button at the bottom of the page */
+  right: 0; /* Place the button to the right */
+  border: dotted 2px; /* Remove borders */
+  outline: rgb(94, 93, 93); /* Remove outline */
+  color: rgb(22, 22, 22); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 10px; /* Increase font size */
+}
+#myBtn:hover {
+  background-color: rgb(129, 127, 127); /* Add a dark-grey background on hover */
+}
+
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
