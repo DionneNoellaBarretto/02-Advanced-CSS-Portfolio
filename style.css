@@ -1,10 +1,10 @@
 :root{
   --laptop-background: #edc0f3;
-  --laptop-nav-foot-background: #b380b9;
+  --laptop-nav-foot: #d994e0;
   --tablet-background: rgb(176, 193, 240);
   --tablet-nav-foot: rgb(155, 178, 243);
-  --cellphone-background: rgb(145, 236, 229);
-  --cellphone-nav-foot: rgb(125, 224, 231);
+  --cellphone-background: rgb(154, 243, 236);
+  --cellphone-nav-foot: rgb(116, 236, 245);
   --text-color: rgb(48, 47, 47);
 }
 * {
@@ -35,16 +35,18 @@ header {
 
 nav {
   display: flex;
-  background-color: var(--laptop-nav-foot-background);
+  background-color: var(--laptop-nav-foot);
   text-align: center;
   justify-content: space-around;
-  font-size: 20px;
-  font-weight: bold;
+  
 }
 nav a {
-  color: var(--text-color);
+  color: rgb(171, 4, 248);
   padding: 14px 20px;
   text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+
 }
 
 body {
@@ -74,6 +76,9 @@ strong{
   height:200px;
   object-fit:cover;
   border-radius:50%;
+  border: 5px dashed;
+  border-image: 30 round;
+  border-color: var(--laptop-nav-foot);
 }
 
 .google{
@@ -110,7 +115,7 @@ section {
 footer {
   padding: 10px;
   text-align: center;
-  background: var(--laptop-nav-foot-background);
+  background: var(--laptop-nav-foot);
   color: var(--text-color);
   display: inline-block;
   width: 100%;
@@ -165,7 +170,13 @@ img:hover{
   nav, footer {
     background-color: var(--tablet-nav-foot);
   }
+  h2 span, nav a {
+    color: rgb(19, 15, 240) !important;
   }
+  .me{
+    border-color: var(--tablet-nav-foot);
+  }
+}
 
 /* Cellphones - header navbar footer changes color */
 @media screen and (max-width: 768px) {
@@ -174,6 +185,13 @@ img:hover{
   }
   nav,footer {
     background-color: var(--cellphone-nav-foot);
+  }
+
+  h2 span, nav a {
+    color: rgb(4, 100, 4) !important;
+  }
+  .me{
+    border-color: var(--cellphone-nav-foot);
   }
 }
 
