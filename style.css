@@ -1,10 +1,13 @@
 :root{
-  --laptop-background: #edc0f3;
-  --laptop-nav-foot: #d994e0;
+  --laptop-background: #9cdbf8;
+  --laptop-nav-foot: #63c6f3;
+  --laptop-section-background: #85c8e7;
   --tablet-background: rgb(176, 193, 240);
   --tablet-nav-foot: rgb(155, 178, 243);
+  --tablet-section-background: rgb(214, 223, 250);
   --cellphone-background: rgb(154, 243, 236);
-  --cellphone-nav-foot: rgb(116, 236, 245);
+  --cellphone-nav-foot: rgb(104, 219, 228);
+  --celllphone-section-background: rgb(209, 252, 248);
   --text-color: rgb(48, 47, 47);
 }
 * {
@@ -45,11 +48,13 @@ nav {
   display: flex;
   background-color: var(--laptop-nav-foot);
   text-align: center;
+    /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
   justify-content: space-around;
   
 }
 nav a {
-  color: rgb(171, 4, 248);
+  color: rgb(50, 91, 228);
   padding: 14px 20px;
   text-decoration: none;
   font-size: 28px;
@@ -67,13 +72,11 @@ main {
 }
 
 aside {
-  flex: 30%;
+  flex: 40%;
   background-color: var(--laptop-background);
-  padding: 10px;
   flex-wrap: wrap;
   text-align: center;
-  align-items: center;
-  height: 200%;
+  content: flex;
 }
 
 strong{
@@ -116,8 +119,8 @@ strong{
 }
 
 section {
-  flex: 70%;
-  background-color: #fff;
+  flex: 60%;
+  background: var(--laptop-section-background)
   padding: 10px;
 }
 
@@ -141,13 +144,44 @@ img:hover{
   border: 0.9px dotted rgb(58, 57, 57);
 }
 
-/* Image Placeholders */
-.sample-img {
-  background-color: #fff;
-  width: 100%;
-  padding: 20px;
-  height: 200px;
-  border: 1px solid black;
+/* Project Snippets*/
+.projects{
+  flex: 0 1 100px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: rgba(245, 240, 220, 0.479);
+  justify-content: space-evenly;
+}
+.HW1,.HW2,.Presentations{
+  border-style: double;
+  border-width: 4px;
+  border-color: var(--laptop-nav-foot);
+  border-radius: 50px;
+  transform: rotate(-2deg);
+  box-shadow: 3px 3px 2px #aaaaaa;
+  margin: 20px;
+  padding: 20 auto;
+}
+
+.HW1 header,.HW2 header,.Presentations header {
+  width: auto !important;
+  border-radius: 50px 50px 0 0;
+}
+
+.HW1,.HW2,.Presentations p {
+  border-radius: 50px 50px 50px 50px;
+  text-align: center;
+  text-decoration: underline;
+  background-color: rgb(250, 247, 216);
+}
+
+.HW1,.HW2,.Presentations img iframe {
+  width: auto !important;
+}
+
+iframe{
+  border-radius: 50px 50px 50px 50px;
+
 }
 
 /* Scroll to the top / Scroll to the bottom quick links*/
@@ -177,12 +211,16 @@ img:hover{
   }
   nav, footer {
     background-color: var(--tablet-nav-foot);
+    flex-direction: column;
   }
   h2 span, nav a {
     color: rgb(19, 15, 240) !important;
   }
-  .me{
+  .me, .HW1, .HW2, .Presentations{
     border-color: var(--tablet-nav-foot);
+  }
+  section{
+    background: var(--tablet-section-background);
   }
 }
 
@@ -193,13 +231,17 @@ img:hover{
   }
   nav,footer {
     background-color: var(--cellphone-nav-foot);
+    flex-direction: column;
   }
 
   h2 span, nav a {
     color: rgb(4, 100, 4) !important;
   }
-  .me{
+  .me, .HW1, .HW2, .Presentations{
     border-color: var(--cellphone-nav-foot);
+  }
+  section{
+    background: var(--cellphone-section-background);
   }
 }
 
