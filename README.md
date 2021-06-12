@@ -20,7 +20,7 @@ GIVEN a webpage meets accessibility standards
 
 --------------------------------
 # DNB's SOLUTION: 
-UNC Boot Camp Submission: 🗂️ [Github Repository](https://github.com/DionneNoellaBarretto/01-HTML-CSS-and-Git-Code-Refactor) 📄[Github Page](https://dionnenoellabarretto.github.io/01-HTML-CSS-and-Git-Code-Refactor/)
+UNC Boot Camp Submission: 🗂️ [Github Repository](https://github.com/DionneNoellaBarretto/02-Advanced-CSS-Portfolio) | 📄[Github Page](https://dionnenoellabarretto.github.io/02-Advanced-CSS-Portfolio/)
 
 --------------------------------
 
