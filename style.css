@@ -54,7 +54,8 @@ nav a {
   text-decoration: none;
   font-size: 28px;
   font-weight: bold;
-
+  border: 4px dotted;
+  border-radius: 70px;
 }
 
 body {
