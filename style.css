@@ -156,7 +156,7 @@ img:hover{
   justify-content: space-evenly;
   align-items:flex-start;
 }
-.HW1,.HW2, .Qwiklabs, .Badges, .Presentations{
+.HW1,.HW2,.Qwiklabs,.Badges,.Presentations{
   border-style: double;
   border-width: 4px;
   border-color: var(--laptop-nav-foot);
@@ -168,12 +168,12 @@ img:hover{
   padding: 20 auto;
 }
 
-.HW1 header,.HW2 header, .Qwiklabs header, .Badges header, .Presentations header {
+.HW1 header,.HW2 header,.Qwiklabs header,.Badges header,.Presentations header {
   width: auto !important;
   border-radius: 50px 50px 0 0;
 }
 
-.HW1, .HW2, .Qwiklabs, .Badges, .Presentations {
+.HW1,.HW2,.Qwiklabs,.Badges,.Presentations {
   border-radius: 50px 50px 50px 50px;
   text-align: center;
   text-decoration: underline;
