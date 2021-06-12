@@ -120,7 +120,7 @@ strong{
 
 section {
   flex: 60%;
-  background: var(--laptop-section-background)
+  background: var(--laptop-section-background);
   padding: 10px;
 }
 
