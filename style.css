@@ -104,6 +104,8 @@ footer img{
   border-radius: 25px;
   padding: 3px;
   display: inline-block;
+  /* all aligned for aesthetic viewing */
+  align-items: baseline;
   width: 10%;
 }
 
@@ -154,6 +156,8 @@ img:hover{
 
 /* Class Selectors */
 .Projects{
+  /* spacing between the cards */
+  margin: 10px;
   border-style: double;
   border-width: 4px;
   border-color: var(--laptop-nav-foot);
@@ -164,10 +168,45 @@ img:hover{
   flex: 0 0 250px;
   flex-direction: row;
   box-shadow: 3px 3px 2px #aaaaaa;
+  /* arranges the items form left top right onwards */
+  align-items: flex-start;
 }
 
 .Projects header{
   border-radius: 50px 50px 50px 50px;
+}
+
+.Projects{
+  position: relative;
+  /* this set the project cards to be on a back plane so as to allow overlay to pop up as the most prominent layer in the front */
+  z-index: auto;
+}
+.Projects:hover{
+/* Upon hover, background color changes from lemony yellow to peachy */
+background-color: rgb(250, 228, 216);
+z-index: 20;
+}
+/* CSS for enlarged image */
+.Projects span{
+  position: absolute;
+  background-color: lightyellow;
+  padding: 3px;
+  left: -100px;
+  border: 3px dashed var(--laptop-nav-foot);
+  visibility: hidden;
+}
+.Projects span img{
+  border-width: 0;
+  max-width: 500px;
+  max-height: 500px;
+  padding: 4px;
+}
+/* CSS for enlarged image on hover */
+.Projects:hover span{
+  visibility: visible;
+  bottom: 15px;
+  /* position of enlarged image's offset horizontally */
+  left: 40px;
 }
 
 .me{
@@ -213,7 +252,7 @@ img:hover{
     background: var(--tablet-background);
     order: 1;
   }
-  nav, footer,main {
+  nav, footer,main, {
     background-color: var(--tablet-nav-foot);
     flex-direction: column;
     order: 2;
@@ -225,12 +264,16 @@ img:hover{
     border-color: var(--tablet-nav-foot);
     flex-direction: column;
   }
+
+  .Projects span{
+    border: 5px dashed var(--tablet-nav-foot)
+  }
+
   section{
     background: var(--tablet-section-background);
-    
   }
-}
 
+}
 /* Cellphones - header navbar footer changes color */
 @media screen and (max-width: 768px) {
   header,aside {
@@ -257,6 +300,11 @@ img:hover{
   .me, .Projects{
     border-color: var(--cellphone-nav-foot);
   }
+
+  .Projects span{
+    border: 5px dashed var(--cellphone-nav-foot)
+  }
+
   section{
     background: var(--cellphone-section-background);
   }
