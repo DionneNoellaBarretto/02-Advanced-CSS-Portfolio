@@ -34,6 +34,7 @@ header {
   text-align: center;
   background: var(--laptop-background);
   color: var(--text-color);
+  
 }
 
 h5{
@@ -71,12 +72,43 @@ main {
   display: flex;
 }
 
+section {
+  float: left;
+  /* flex-wrap: wrap; */
+  background: var(--laptop-section-background);
+  padding: 10px;
+}
+
+/* Project Snippets*/
+#Preview_Projects{
+  flex: 1 0 70%;
+  flex-wrap: wrap;
+  background-color: rgba(245, 240, 220, 0.479);
+  justify-content: space-around;
+  align-items:flex-start;
+}
+.Projects{
+  border-style: double;
+  border-width: 4px;
+  border-color: var(--laptop-nav-foot);
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: underline;
+  background-color: rgb(250, 247, 216);
+  flex: 0 0 250px;
+  transform: rotate(-2deg);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.Projects header{
+  border-radius: 50px 50px 0 0;
+}
+
 aside {
-  flex: 1;
+  flex: 0 0 30%;
   background-color: var(--laptop-background);
   flex-wrap: wrap;
   text-align: center;
-  display: block;
   padding: 50px;
 }
 
@@ -119,14 +151,6 @@ strong{
   color: rgb(0, 97, 17);
 }
 
-section {
-  flex: 60%;
-  display: block;
-  flex-wrap: wrap;
-  background: var(--laptop-section-background);
-  padding: 10px;
-}
-
 footer {
   padding: 10px;
   text-align: center;
@@ -147,44 +171,6 @@ img:hover{
   border: 0.9px dotted rgb(58, 57, 57);
 }
 
-/* Project Snippets*/
-#Preview_Projects{
-  flex: 0 1 100px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(245, 240, 220, 0.479);
-  justify-content: space-evenly;
-  align-items:flex-start;
-}
-.HW1,.HW2,.Qwiklabs,.Badges,.Presentations{
-  border-style: double;
-  border-width: 4px;
-  border-color: var(--laptop-nav-foot);
-  border-radius: 50px;
-  flex: 0 0 250px;
-  transform: rotate(-2deg);
-  box-shadow: 3px 3px 2px #aaaaaa;
-  margin: 20px;
-  padding: 20 auto;
-}
-
-.HW1 header,.HW2 header,.Qwiklabs header,.Badges header,.Presentations header {
-  width: auto !important;
-  border-radius: 50px 50px 0 0;
-}
-
-.HW1,.HW2,.Qwiklabs,.Badges,.Presentations {
-  border-radius: 50px 50px 50px 50px;
-  text-align: center;
-  text-decoration: underline;
-  background-color: rgb(250, 247, 216);
-}
-
-.img, iframe {
-  width: 100%;
-  height: auto;
-}
-
 /* Scroll to the top / Scroll to the bottom quick links*/
 #myBtn {
   position: fixed; /* Fixed/sticky position */
@@ -202,7 +188,6 @@ img:hover{
   background-color: rgb(129, 127, 127); /* Add a dark-grey background on hover */
 }
 
-
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
 /* Tablets - header nav footer changes color */
@@ -210,23 +195,18 @@ img:hover{
   
   header, aside {
     background: var(--tablet-background);
-    flex-direction: column;
   }
   nav, footer {
     background-color: var(--tablet-nav-foot);
-    flex-direction: column;
   }
   h2 span, nav a {
     color: rgb(19, 15, 240) !important;
-    flex-direction: column;
   }
-  .me, .HW1, .HW2,.Qwiklabs, .Badges, .Presentations{
+  .me, .Projects{
     border-color: var(--tablet-nav-foot);
-    flex-direction: column;
   }
   section{
     background: var(--tablet-section-background);
-    flex-direction: column;
   }
 }
 
@@ -250,12 +230,13 @@ aside{
   nav,footer {
     background-color: var(--cellphone-nav-foot);
     flex-direction: column;
+    order: 2;
   }
 
   h2 span, nav a {
     color: rgb(4, 100, 4) !important;
   }
-  .me, .HW1, .HW2,.Qwiklabs,.Badges .Presentations{
+  .me, .Projects{
     border-color: var(--cellphone-nav-foot);
   }
   section{
