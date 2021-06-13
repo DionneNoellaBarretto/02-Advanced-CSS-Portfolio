@@ -1,10 +1,12 @@
 # 02-Advanced-CSS-Portfolio Homework Expectation
 
+```
+In this Homework, students will apply recently learned core skills including but not limited to: flexbox, media queries, and CSS variables and create a web application from scratch!
+```
+
 ### User Story
 ```
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+AS AN employer I WANT to view a potential employee's deployed portfolio of work samples SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
 
 ### Acceptance Criteria
