@@ -17,7 +17,6 @@
   box-sizing: border-box;
   font-family: "Audiowide", "Sofia", sans-serif;
   text-decoration: none;
-
 }
 
 /* Element Selectors */
@@ -54,13 +53,13 @@ nav a {
 .dropbtn {
   background-color: transparent;
   border: 0.5px dotted var(--laptop-section-background);
-  border-radius: 70px;
+  border-radius: 30px;
 }
 
 /* The container  - needed to position the dropdown content */
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -96,6 +95,7 @@ nav a {
 .dropdown:hover .dropbtn {
   background-color:lightyellow;
 }
+
 
 h5{
   position: absolute;
