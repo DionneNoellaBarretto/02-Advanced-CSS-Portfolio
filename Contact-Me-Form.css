@@ -4,6 +4,12 @@
     --cellphone-background: rgb(125, 224, 231);
 }
 
+header {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
 .container{
 background-color: var(--laptop-background);
 }

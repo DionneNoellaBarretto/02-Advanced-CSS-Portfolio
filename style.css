@@ -1,4 +1,4 @@
-/* Color Variables */
+/* :root can be useful for declaring global CSS variables: in this case we are defining almost all repititive colors depending on the screen size & location of use*/
 :root{
   --laptop-background: #9cdbf8;
   --laptop-nav-foot: #63c6f3;
@@ -40,7 +40,7 @@ nav {
   
 }
 nav a {
-  color: rgb(50, 91, 228);
+  color: rgb(10, 94, 250);
   padding: 14px 20px;
   text-decoration: none;
   font-size: 28px;
@@ -56,7 +56,7 @@ h5{
   font-size: 10.5px;
 }
 
-h2{
+h2, h4{
   text-align: center;
 }
 
@@ -84,8 +84,6 @@ section {
   background: var(--laptop-section-background);
   padding: 10px;
 }
-
-
 
 strong{
   text-decoration: underline;
@@ -155,6 +153,11 @@ img:hover{
 }
 
 /* Class Selectors */
+.Projects header{
+  border-radius: 50px 50px 50px 50px;
+}
+
+/* Referenced this to setup image thumbnails: https://stackoverflow.com/questions/11604792/hover-preview-with-css-instead-of-js/11604813 */
 .Projects{
   /* spacing between the cards */
   margin: 10px;
@@ -170,17 +173,11 @@ img:hover{
   box-shadow: 3px 3px 2px #aaaaaa;
   /* arranges the items form left top right onwards */
   align-items: flex-start;
-}
-
-.Projects header{
-  border-radius: 50px 50px 50px 50px;
-}
-
-.Projects{
   position: relative;
-  /* this set the project cards to be on a back plane so as to allow overlay to pop up as the most prominent layer in the front */
+  /* this set the project cards to be on a back plane so as to allow overlay to pop up as the most prominent layer in the front Ref: https://stackoverflow.com/questions/15782078/bring-element-to-front-using-css*/
   z-index: auto;
 }
+
 .Projects:hover{
 /* Upon hover, background color changes from lemony yellow to peachy */
 background-color: rgb(250, 228, 216);
@@ -197,8 +194,8 @@ z-index: 20;
 }
 .Projects span img{
   border-width: 0;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 450px;
+  max-height: 600px;
   padding: 4px;
 }
 /* CSS for enlarged image on hover */
@@ -218,22 +215,21 @@ z-index: 20;
   border-image: 30 round;
   border-color: var(--laptop-nav-foot);
 }
-
+/* company logo formatting */
 .google{
   width:150px;
   height:50x;
   object-fit:scale-down;
 }
-
 .rubrik{
   width:150px;
   height:50x;
   object-fit:scale-down;
 }
-
 .brightness:hover {
   opacity: 0.50; }
 
+/* vmware text formatting */
 .link:visited {
   color: rgb(252, 13, 200);
 }
@@ -252,59 +248,51 @@ z-index: 20;
     background: var(--tablet-background);
     order: 1;
   }
-  nav, footer,main, {
+  nav, footer, main {
     background-color: var(--tablet-nav-foot);
     flex-direction: column;
     order: 2;
   }
   h2 span, nav a {
-    color: rgb(19, 15, 240) !important;
+    color: rgb(53, 50, 243) !important;
   }
   .me, .Projects{
     border-color: var(--tablet-nav-foot);
     flex-direction: column;
   }
-
   .Projects span{
     border: 5px dashed var(--tablet-nav-foot)
   }
-
   section{
     background: var(--tablet-section-background);
   }
-
 }
+
 /* Cellphones - header navbar footer changes color */
 @media screen and (max-width: 768px) {
   header,aside {
     background: var(--cellphone-background);
   }
-
   aside{
     order: 0;
   }
-
   #Preview_Projects{
     order: 2;
   }
-
   nav,footer,main {
       background-color: var(--cellphone-nav-foot);
       flex-direction: column;
       order: 1;
     }
-
   h2 span, nav a {
-    color: rgb(4, 100, 4) !important;
+    color: rgb(12, 121, 12) !important;
   }
   .me, .Projects{
     border-color: var(--cellphone-nav-foot);
   }
-
   .Projects span{
     border: 5px dashed var(--cellphone-nav-foot)
   }
-
   section{
     background: var(--cellphone-section-background);
   }

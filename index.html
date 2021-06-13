@@ -1,13 +1,15 @@
+<!-- HTML declaration -->
 <!DOCTYPE html>
 <html>
-
+<!-- Website metadata declaration -->
 <head>
   <title>DNB Portfolio</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- linking relationship with stylesheet -->
   <link rel="stylesheet" type="text/css" href="./style.css" />
+<!-- referencing external stylesheet for custom font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-
 </head>
 
 <!-- Header -->
@@ -17,22 +19,24 @@
     <script language="Javascript">
       document.write("Last modified on: " + document.lastModified + "");</Script>
   </h5>
-  <span title="Go back Home"><img id="home-icon" src="./home icon.png">
-    <h1> Hello, I'm ɖռɮ! </h1>
+  <!-- adding a home button -->
+      <h1> <img src="./Hello.gif" width="200" height="100">, I'm ɖռɮ! 
+        <span title="Go back Home"><img id="home-icon" src="./home icon.png">
+      </h1>
     <h2>I'm beginning to &#128150 <span style="color: rgb(50, 91, 228)"> HTML, CSS & GIT!</span></h2>
-</header>
+    <a href="https://bootcamp.unc.edu/coding/" title="Click to Learn More" target="_blank"><h4>Thanks to UNC Coding Bootcamp</h4></a>
+  </header>
 
-<!-- Navbar -->
+<!-- Navbar with hotlinks to sections in the body -->
 <nav>
   <a href="#Contact-Me">Contact Me</a>
   <a href="#Preview_Projects">Preview Projects</a>
-  <a href="Dionne Noella Barretto_Resume_3.1.2021.pdf" target="_blank">Resume</a>
+  <a href="Dionne Noella Barretto_Resume_3.1.2021.pdf" title="Click to Download" target="_blank">Resume</a>
   <a href="#About-Me">About Me</a>
   <a href="#Background">Background</a>
 </nav>
 
 <!-- Body -->
-
 <body>
   <main>
     <aside>
@@ -61,11 +65,11 @@
         <br>
       <h2 id="Background"> Backgorund</h2>
       I'm an iSchool-Syracuse University(SU), 2015 Post Graduate in Telecommunications and Network Management. During
-      my Masters at SU, I was actively involved in formulating course content, developing lab exercises for the new
-      "IST 600 Cloud Management" Course set to roll out in Fall '15. At SU, my specialization transitioned through the
+      my Masters at SU, I was actively involved in formulating the course content, developing lab exercises for the new
+      "IST 600 Cloud Management" Course that rolled out in Fall '15. At SU, my specialization transitioned through the
       field of Wireless Communications epitomizing Internet of Things (IoT)–Machine to Machine (M2M)
       Communications–Big Data–Connected Cars in unison with finer elements of legacy Networking aspects. I have
-      channeled all the bits and pieces of this learning graph to reach out to a newer universe "The Cloud"!
+      channeled all the bits and pieces of this learning graph to fit into a newer universe- "The Cloud"!
       <br>
       <br> My undergraduate Bachelor's in Electronics and Telecommunication Engineering (Jun'09-May'13) introduced me
       to Mobile Communication Systems, Digital Communications, Cellular Networks, Wireless Networking fascinated and
@@ -73,7 +77,7 @@
       </p>
     </aside>
     <div id="Preview_Projects">
-      <h2>Featured Projects</h2>
+      <h2>Spotlight Projects</h2>
 
       <section class="Projects preview">
         <header>UI Responsive Portfolio</header>
@@ -167,7 +171,7 @@
         <p>Video Recordings</p>
       </section>
     </div>
-
+<!-- shortcut to scroll to the top in 1 click -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top &#129045;</button>
   </main>
 </body>
@@ -189,6 +193,7 @@
   <h4> &copy; Copyright 2021 | Dionne Noella Barretto </h4>
 </footer>
 
+<!-- embedded inline javascript for the scroll to the top button in body (see bottom right corner) Script's being added to the end to ensure page load isnt affected-->
 <script>
   //Get to the Top button:
   mybutton = document.getElementById("myBtn");
@@ -209,8 +214,6 @@
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
-
-
 </script>
 
 </html>
