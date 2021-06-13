@@ -1,3 +1,4 @@
+/* Color Variables */
 :root{
   --laptop-background: #9cdbf8;
   --laptop-nav-foot: #63c6f3;
@@ -10,6 +11,8 @@
   --celllphone-section-background: rgb(209, 252, 248);
   --text-color: rgb(48, 47, 47);
 }
+
+/* Universal Selector for commonly set attributes*/
 * {
   box-sizing: border-box;
   font-family: "Audiowide", "Sofia", sans-serif;
@@ -17,17 +20,7 @@
 
 }
 
-#home-icon{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  border: 3px dotted #6d6d6c;
-  border-radius: 25px;
-  padding: 2px;
-  width: 75px;
-}
-
+/* Element Selectors */
 header {
   margin: 0;
   padding: 10px;
@@ -36,14 +29,6 @@ header {
   color: var(--text-color);
   
 }
-
-h5{
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 10.5px;
-}
-
 
 nav {
   display: flex;
@@ -64,12 +49,33 @@ nav a {
   border-radius: 70px;
 }
 
+h5{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10.5px;
+}
+
+h2{
+  text-align: center;
+}
+
 body {
   margin: 0;
 }
 
+aside {
+  /* display: block; */
+  flex: 0 0 25%;
+  background-color: var(--laptop-background);
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 50px;
+}
+
 main {
   display: flex;
+  background-color: var(--laptop-nav-foot);
 }
 
 section {
@@ -79,14 +85,74 @@ section {
   padding: 10px;
 }
 
+
+
+strong{
+  text-decoration: underline;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background: var(--laptop-nav-foot);
+  color: var(--text-color);
+  display: inline-block;
+  width: 100%;
+}
+
+footer img{
+  border-radius: 25px;
+  padding: 3px;
+  display: inline-block;
+  width: 10%;
+}
+
+img:hover{
+  border: 0.9px dotted rgb(58, 57, 57);
+}
+
+/* ID Selector(s) */
+#home-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  border: 3px dotted #6d6d6c;
+  border-radius: 25px;
+  padding: 2px;
+  width: 75px;
+}
+
 /* Project Snippets*/
 #Preview_Projects{
-  flex: 1 0 70%;
+  flex: 1 0 65%;
   flex-wrap: wrap;
   background-color: rgba(245, 240, 220, 0.479);
   justify-content: space-around;
   align-items:flex-start;
+  /* Custom css border: https://kovart.github.io/dashed-border-generator/  */
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='lightgrey' stroke-width='6' stroke-dasharray='15%2c 15%2c 1' stroke-dashoffset='74' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 30px;
 }
+
+/* Scroll to the top / Scroll to the bottom quick links*/
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 0; /* Place the button at the bottom of the page */
+  right: 0; /* Place the button to the right */
+  border: dotted 2px; /* Remove borders */
+  outline: rgb(94, 93, 93); /* Remove outline */
+  color: rgb(22, 22, 22); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 10px; /* Increase font size */
+}
+#myBtn:hover {
+  background-color: rgb(129, 127, 127); /* Add a dark-grey background on hover */
+}
+
+/* Class Selectors */
 .Projects{
   border-style: double;
   border-width: 4px;
@@ -96,24 +162,12 @@ section {
   text-decoration: underline;
   background-color: rgb(250, 247, 216);
   flex: 0 0 250px;
-  transform: rotate(-2deg);
+  flex-direction: row;
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
 .Projects header{
-  border-radius: 50px 50px 0 0;
-}
-
-aside {
-  flex: 0 0 30%;
-  background-color: var(--laptop-background);
-  flex-wrap: wrap;
-  text-align: center;
-  padding: 50px;
-}
-
-strong{
-  text-decoration: underline;
+  border-radius: 50px 0 50px 50px;
 }
 
 .me{
@@ -151,62 +205,29 @@ strong{
   color: rgb(0, 97, 17);
 }
 
-footer {
-  padding: 10px;
-  text-align: center;
-  background: var(--laptop-nav-foot);
-  color: var(--text-color);
-  display: inline-block;
-  width: 100%;
-}
-
-footer img{
-  border-radius: 25px;
-  padding: 3px;
-  display: inline-block;
-  width: 10%;
-}
-
-img:hover{
-  border: 0.9px dotted rgb(58, 57, 57);
-}
-
-/* Scroll to the top / Scroll to the bottom quick links*/
-#myBtn {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 0; /* Place the button at the bottom of the page */
-  right: 0; /* Place the button to the right */
-  border: dotted 2px; /* Remove borders */
-  outline: rgb(94, 93, 93); /* Remove outline */
-  color: rgb(22, 22, 22); /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px; /* Some padding */
-  border-radius: 15px; /* Rounded corners */
-  font-size: 10px; /* Increase font size */
-}
-#myBtn:hover {
-  background-color: rgb(129, 127, 127); /* Add a dark-grey background on hover */
-}
-
-/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-
+/* Media Queries for Resonsive UI */
 /* Tablets - header nav footer changes color */
 @media screen and (max-width: 992px) {
   
   header, aside {
     background: var(--tablet-background);
+    order: 1;
   }
-  nav, footer {
+  nav, footer,main {
     background-color: var(--tablet-nav-foot);
+    flex-direction: column;
+    order: 2;
   }
   h2 span, nav a {
     color: rgb(19, 15, 240) !important;
   }
   .me, .Projects{
     border-color: var(--tablet-nav-foot);
+    flex-direction: column;
   }
   section{
     background: var(--tablet-section-background);
+    
   }
 }
 
@@ -216,22 +237,19 @@ img:hover{
     background: var(--cellphone-background);
   }
 
-  header, nav{
+  aside{
     order: 0;
   }
-aside{
-  order: 1;
-}
 
-#Preview_Projects{
-  order: 3;
-}
-
-  nav,footer {
-    background-color: var(--cellphone-nav-foot);
-    flex-direction: column;
+  #Preview_Projects{
     order: 2;
   }
+
+  nav,footer,main {
+      background-color: var(--cellphone-nav-foot);
+      flex-direction: column;
+      order: 1;
+    }
 
   h2 span, nav a {
     color: rgb(4, 100, 4) !important;
@@ -242,5 +260,5 @@ aside{
   section{
     background: var(--cellphone-section-background);
   }
-}
+  }
 
