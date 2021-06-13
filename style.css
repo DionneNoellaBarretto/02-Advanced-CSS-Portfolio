@@ -154,7 +154,7 @@ img:hover{
 
 /* Class Selectors */
 .Projects header{
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px 50px 0px 0px;
 }
 
 /* Referenced this to setup image thumbnails: https://stackoverflow.com/questions/11604792/hover-preview-with-css-instead-of-js/11604813 */
