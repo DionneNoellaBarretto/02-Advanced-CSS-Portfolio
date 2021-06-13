@@ -8,7 +8,7 @@
   --tablet-section-background: rgb(214, 223, 250);
   --cellphone-background: rgb(154, 243, 236);
   --cellphone-nav-foot: rgb(104, 219, 228);
-  --celllphone-section-background: rgb(209, 252, 248);
+  --cellphone-section-background: rgb(209, 252, 248);
   --text-color: rgb(48, 47, 47);
 }
 
@@ -47,6 +47,54 @@ nav a {
   font-weight: bold;
   border: 4px dotted;
   border-radius: 70px;
+}
+
+/* Dropdown Section in Nav Projects */
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  border: 0.5px dotted var(--laptop-section-background);
+  border-radius: 70px;
+}
+
+/* The container  - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  justify-content:center;
+  background-color: var(--laptop-background);
+  opacity: 0.85;
+  min-width: 200px;
+  z-index:1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-size: 24px;
+  color: rgb(10, 94, 250);
+  padding: 5px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:rgb(250, 228, 216);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color:lightyellow;
 }
 
 h5{
@@ -160,7 +208,7 @@ img:hover{
 /* Referenced this to setup image thumbnails: https://stackoverflow.com/questions/11604792/hover-preview-with-css-instead-of-js/11604813 */
 .Projects{
   /* spacing between the cards */
-  margin: 10px;
+  margin: 20px;
   border-style: double;
   border-width: 4px;
   border-color: var(--laptop-nav-foot);
@@ -172,7 +220,7 @@ img:hover{
   flex-direction: row;
   box-shadow: 3px 3px 2px #aaaaaa;
   /* arranges the items form left top right onwards */
-  align-items: flex-start;
+  align-items: center;
   position: relative;
   /* this set the project cards to be on a back plane so as to allow overlay to pop up as the most prominent layer in the front Ref: https://stackoverflow.com/questions/15782078/bring-element-to-front-using-css*/
   z-index: auto;
@@ -244,7 +292,7 @@ z-index: 20;
 /* Tablets - header nav footer changes color */
 @media screen and (max-width: 992px) {
   
-  header, aside {
+  header, aside, .dropdown-content {
     background: var(--tablet-background);
     order: 1;
   }
@@ -253,7 +301,8 @@ z-index: 20;
     flex-direction: column;
     order: 2;
   }
-  h2 span, nav a {
+
+  h2 span, nav a, .dropdown-content a {
     color: rgb(53, 50, 243) !important;
   }
   .me, .Projects{
@@ -266,11 +315,14 @@ z-index: 20;
   section{
     background: var(--tablet-section-background);
   }
+  .dropbtn{
+    border: 0.5px dotted var(--tablet-section-background);
+  }
 }
 
 /* Cellphones - header navbar footer changes color */
 @media screen and (max-width: 768px) {
-  header,aside {
+  header,aside, .dropdown-content {
     background: var(--cellphone-background);
   }
   aside{
@@ -283,8 +335,9 @@ z-index: 20;
       background-color: var(--cellphone-nav-foot);
       flex-direction: column;
       order: 1;
-    }
-  h2 span, nav a {
+  }
+
+  h2 span, nav a, .dropdown-content a {
     color: rgb(12, 121, 12) !important;
   }
   .me, .Projects{
@@ -295,6 +348,9 @@ z-index: 20;
   }
   section{
     background: var(--cellphone-section-background);
+  }
+  .dropbtn{
+    border: 0.5px dotted var(--cellphone-section-background);
   }
   }
 
