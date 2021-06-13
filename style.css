@@ -265,13 +265,13 @@ z-index: 20;
 }
 /* company logo formatting */
 .google{
-  width:150px;
-  height:50x;
+  width:90px;
+  height:50px;
   object-fit:scale-down;
 }
 .rubrik{
-  width:150px;
-  height:50x;
+  width:110px;
+  height:50px;
   object-fit:scale-down;
 }
 .brightness:hover {
