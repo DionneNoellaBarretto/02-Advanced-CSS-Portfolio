@@ -1,15 +1,16 @@
 <!-- HTML declaration -->
-<!DOCTYPE html >
+<!DOCTYPE html>
 <!-- Per https://www.w3.org/International/tutorials/language-decl/ its good practice to set language to en upfront -->
 <html lang="en">
 <!-- Website metadata declaration -->
+
 <head>
   <title>DNB Portfolio</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- linking relationship with stylesheet -->
+  <!-- linking relationship with stylesheet -->
   <link rel="stylesheet" type="text/css" href="./style.css" />
-<!-- referencing external stylesheet for custom font -->
+  <!-- referencing external stylesheet for custom font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 
@@ -21,33 +22,38 @@
       document.write("Last modified on: " + document.lastModified + "");</Script>
   </h5>
   <!-- adding a home button -->
-      <h1> <img src="./Hello.gif" alt="Image of a cloud waving to say hello!" width="200" height="100">, I'm ɖռɮ! 
-        <!-- <span title="Go back Home"><img id="home-icon" src="./home-icon.png"></span> : Commenting this out as home button isn't functional att his time as the page doesn't open links in itself but rather in new tabs --> 
-      </h1>
-    <h2>I'm beginning to &#128150; <span style="color: rgb(50, 91, 228)"> HTML, CSS & GIT!</span></h2>
-    <a href="https://bootcamp.unc.edu/coding/" title="Click to Learn More" target="_blank"><h4>Thanks to UNC Coding Bootcamp</h4></a>
-  </header>
+  <h1> <img src="./Hello.gif" alt="Image of a cloud waving to say hello!" width="200" height="100">, I'm ɖռɮ!
+    <!-- <span title="Go back Home"><img id="home-icon" src="./home-icon.png"></span> : Commenting this out as home button isn't functional att his time as the page doesn't open links in itself but rather in new tabs -->
+  </h1>
+  <h2>I'm beginning to &#128150; <span style="color: rgb(50, 91, 228)"> HTML, CSS & GIT!</span></h2>
+  <a href="https://bootcamp.unc.edu/coding/" title="Click to Learn More" target="_blank">
+    <h4>Thanks to UNC Coding Bootcamp</h4>
+  </a>
+</header>
 
 <!-- Navbar with hotlinks to sections in the body -->
 <nav>
   <a href="#Contact-Me">Contact Me</a>
-    <ol class="dropdown">
-      <button class="dropbtn"><a href="#Preview_Projects" title="Long-LeftClick and drag cursor over navigation menu entries to scroll through dropdown options">Spotlight Projects</a></button>
-      <h3 class="dropdown-content">
-        <a href="#Portfolio">UI Responsive Portfolio (this Page)</a>
-        <a href="#RefactoringCode">Refactoring HW1 Code</a>
-        <a href="#FavoriteBand">Favorite Band Fan Page</a>
-        <a href="#JS-Game">Javascript Interactive Game</a>
-        <a href="#1stWebsite">Panda Love</a>
-      </h3>
-    </ol>
+  <ol class="dropdown">
+    <button class="dropbtn"><a href="#Preview_Projects"
+        title="Long-LeftClick and drag cursor over navigation menu entries to scroll through dropdown options">Spotlight
+        Projects</a></button>
+    <h3 class="dropdown-content">
+      <a href="#Portfolio">UI Responsive Portfolio (this Page)</a>
+      <a href="#RefactoringCode">Refactoring HW1 Code</a>
+      <a href="#FavoriteBand">Favorite Band Fan Page</a>
+      <a href="#JS-Game">Javascript Interactive Game</a>
+      <a href="#1stWebsite">Panda Love</a>
+    </h3>
+  </ol>
   <a href="DionneNoellaBarretto_Resume_3.1.2021.pdf" title="Click to Download" target="_blank">Resume</a>
   <a href="#About-Me">About Me</a>
   <a href="#Background">Background</a>
   <a href="#Acclaim">Certification(s)</a>
 </nav>
 
-<body><!-- Body -->
+<body>
+  <!-- Body -->
   <main>
     <aside>
       <figure>
@@ -70,28 +76,30 @@
         My interests are, along the lines of research & development that constitute the big picture of an “Automated
         Planet” in association with testing, suggesting solutions that could/ will be carried out in years to come which
         all funnel down into the domain of Cloud Management, Policy and its path of Migration:'The Way to Rise'!
-        </p>
-        <br>
-        <br>
+      </p>
+      <br>
+      <br>
       <h2 id="Background"> Background</h2>
       <p>I'm an iSchool-Syracuse University(SU), 2015 Post Graduate in Telecommunications and Network Management. During
-      my Masters at SU, I was actively involved in formulating the course content, developing lab exercises for the new
-      "IST 600 Cloud Management" Course that rolled out in Fall '15. At SU, my specialization transitioned through the
-      field of Wireless Communications epitomizing Internet of Things (IoT)–Machine to Machine (M2M)
-      Communications–Big Data–Connected Cars in unison with finer elements of legacy Networking aspects. I have
-      channeled all the bits and pieces of this learning graph to fit into a newer universe- "The Cloud"!
-      <br>
-      <br> My undergraduate Bachelor's in Electronics and Telecommunication Engineering (Jun'09-May'13) introduced me
-      to Mobile Communication Systems, Digital Communications, Cellular Networks, Wireless Networking fascinated and
-      urged me to deep dive into this rapidly-paced world of IT Development.
-        </p>
+        my Masters at SU, I was actively involved in formulating the course content, developing lab exercises for the
+        new
+        "IST 600 Cloud Management" Course that rolled out in Fall '15. At SU, my specialization transitioned through the
+        field of Wireless Communications epitomizing Internet of Things (IoT)–Machine to Machine (M2M)
+        Communications–Big Data–Connected Cars in unison with finer elements of legacy Networking aspects. I have
+        channeled all the bits and pieces of this learning graph to fit into a newer universe- "The Cloud"!
+        <br>
+        <br> My undergraduate Bachelor's in Electronics and Telecommunication Engineering (Jun'09-May'13) introduced me
+        to Mobile Communication Systems, Digital Communications, Cellular Networks, Wireless Networking fascinated and
+        urged me to deep dive into this rapidly-paced world of IT Development.
+      </p>
     </aside>
     <div id="Preview_Projects">
       <h2>Spotlight Projects</h2>
       <section id="Portfolio" class="Projects preview">
         <header>UI Responsive Portfolio</header>
         <!-- Linking to self -->
-        <img title="Dionne Noella Barretto's Portfolio" src="./WireframeMockUp.png" alt="MockUp Wireframing Image" width="250px" height="300px">
+        <img title="Dionne Noella Barretto's Portfolio" src="./WireframeMockUp.png" alt="MockUp Wireframing Image"
+          width="250px" height="300px">
         <span>
           <a href="https://dionnenoellabarretto.github.io/02-Advanced-CSS-Portfolio/" target="_self"><img
               src="./WireframeMockUp.png" alt="MockUp Wireframing Image"></a>
@@ -99,9 +107,10 @@
         <p>This Page</p>
       </section>
 
-      <section  id="RefactoringCode" class="Projects preview">
+      <section id="RefactoringCode" class="Projects preview">
         <header>Week1-HW_Refactoring Code</header>
-        <img title="Refactoring Code" src="./01-html-css-git-homework-demo.png" alt="HW1 Image" width="250px" height="300px">
+        <img title="Refactoring Code" src="./01-html-css-git-homework-demo.png" alt="HW1 Image" width="250px"
+          height="300px">
         <span>
           <a href="https://dionnenoellabarretto.github.io/01-HTML-CSS-and-Git-Code-Refactor/" target="_blank"><img
               src="./01-html-css-git-homework-demo.png" alt="HW1 Image"></a>
@@ -111,9 +120,11 @@
 
       <section id="CSS_Box_Model_Properties" class="Projects preview">
         <header>Week1-Ex18-CSS_Box_Model</header>
-        <img title="Week1-Ex18-CSS_Box_Model Solution" src="./CSS-BoxModel-Ex_18.png" alt="Week1-Ex18-CSS_Box_Model Solution" width="250px" height="300px">
+        <img title="Week1-Ex18-CSS_Box_Model Solution" src="./CSS-BoxModel-Ex_18.png"
+          alt="Week1-Ex18-CSS_Box_Model Solution" width="250px" height="300px">
         <span>
-          <a href="./CSS-BoxModel-Ex18.html" target="_blank"><img src="./CSS-BoxModel-Ex_18.png" alt="Week1-Ex18-CSS_Box_Model Solution"></a>
+          <a href="./CSS-BoxModel-Ex18.html" target="_blank"><img src="./CSS-BoxModel-Ex_18.png"
+              alt="Week1-Ex18-CSS_Box_Model Solution"></a>
         </span>
         <p>CSS Box Model Properties exploration</p>
       </section>
@@ -129,9 +140,10 @@
 
       <section id="JS-Game" class="Projects preview">
         <header>First Game</header>
-        <img title="Fun with Javascript" src="./JavaScript Game.png" alt="Fun with JavaScript" width="250px" height="300px">
+        <img title="Fun with Javascript" src="./JavaScript Game.png" alt="Fun with JavaScript" width="250px"
+          height="300px">
         <span>
-          <a href="./Game.html" target="_blank"><img src="./JavaScript Game.png" alt="Fun with JavaScript" ></a>
+          <a href="./Game.html" target="_blank"><img src="./JavaScript Game.png" alt="Fun with JavaScript"></a>
         </span>
         <p>Javascript Interactive Game</p>
       </section>
@@ -154,39 +166,45 @@
       <!-- Used https://developers.facebook.com/docs/plugins/embedded-video-player/ to find facebook embedded video iframe links -->
       <section id="VMworld" class="Projects preview">
         <header>VMworld 2019 Sessions</header>
-        <iframe title="Troubleshooting SuperHeroes in HzC" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fvmwareeducation%2Fvideos%2Flive-from-vmworld-with-linus-bourque-principal-instructor-and-dionne-noella-barr%2F358103825126606%2F&width=200&show_text=false&height=125&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        <iframe title="Zero to Hero: End to End HzC Az troubleshooting workshop" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fvmwareeducation%2Fvideos%2Fbecoming-troubleshooting-superheroes-for-horizon-cloud%2F720625145042964%2F&width=200&show_text=false&height=125&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe title="Troubleshooting SuperHeroes in HzC"
+          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fvmwareeducation%2Fvideos%2Flive-from-vmworld-with-linus-bourque-principal-instructor-and-dionne-noella-barr%2F358103825126606%2F&width=200&show_text=false&height=125&appId"
+          style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe title="Zero to Hero: End to End HzC Az troubleshooting workshop"
+          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fvmwareeducation%2Fvideos%2Fbecoming-troubleshooting-superheroes-for-horizon-cloud%2F720625145042964%2F&width=200&show_text=false&height=125&appId"
+          style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         <p>Video Recordings</p>
       </section>
     </div>
-<!-- shortcut to scroll to the top in 1 click -->
+    <!-- shortcut to scroll to the top in 1 click -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top &#129045;</button>
   </main>
 </body>
 
 <!-- Footer -->
-  <footer id="Contact-Me">
-    <a href="https://getcloud.withgoogle.com/schedule/dionnenoella?ln=en" target="_blank"><img src="./calendar.png"
-        title=" Click to schedule time on my Calendar" alt="Schedule time on my calendar" width="100px" height=auto
-        style="display: inline; margin: 5px 5px;"></a>
-    <a href="https://www.linkedin.com/in/dionnenoellabarretto/" target="_blank"><img src="./linked_in.png"
-        title="Click to connect via LinkedIn" alt="LinkedIn image" style="display: inline; margin: 0 5px;"></a>
-    <a href="https://voice.google.com/u/0/calls?a=nc,%2B[315-460-5604]" target="blank"><img src="./call-me.png"
-        title="Click to call me" alt="Voice Call Image"></a>
-    <a href="https://github.com/DionneNoellaBarretto" target="_blank"><img src="./GitHub-logo.png"
-        title="Click to view my Github Profile" height=auto width="100px" alt="GitHub image"
-        style="display: inline; margin: 0 5px;"></a>
-    <a href="./Contact-Me-Form.html" target="_blank"><img src="./contact_me.png"
-        title="Click to fill out a 'Contact Me' Form" alt="Contact Me image" style="display: inline; margin: 0 5px;"></a>
-    <a href="https://run.qwiklabs.com/public_profiles/30ee19d4-fd4a-4cf2-aea7-131d35e4b45d" target="_blank"><img
-                src="./qwiklabs_logo.png" alt="Qwiklabs logo" width="450px" height=50px"></a>
-    <a href="https://www.freecodecamp.org/dionnenoellabarretto" target="_blank"><img
-          src="./freecodecamp.png" alt="FreeCodeCamp logo" width="450px" height="auto"></a>
-    <a href="https://www.codecademy.com/profiles/DenverDionne" target="_blank"><img
-    src="./codeacademy_logo.png" alt="CodeAcademy logo" width="450px" height="50px"></a>
-</section>
-        <h4> &copy; Copyright 2021 | Dionne Noella Barretto </h4>
-  </footer>
+<footer id="Contact-Me">
+  <a href="https://getcloud.withgoogle.com/schedule/dionnenoella?ln=en" target="_blank"><img src="./calendar.png"
+      title=" Click to schedule time on my Calendar" alt="Schedule time on my calendar" width="100px" height=auto
+      style="display: inline; margin: 5px 5px;"></a>
+  <a href="https://www.linkedin.com/in/dionnenoellabarretto/" target="_blank"><img src="./linked_in.png"
+      title="Click to connect via LinkedIn" alt="LinkedIn image" style="display: inline; margin: 0 5px;"></a>
+  <a href="https://voice.google.com/u/0/calls?a=nc,%2B[315-460-5604]" target="blank"><img src="./call-me.png"
+      title="Click to call me" alt="Voice Call Image"></a>
+  <a href="https://github.com/DionneNoellaBarretto" target="_blank"><img src="./GitHub-logo.png"
+      title="Click to view my Github Profile" height=auto width="100px" alt="GitHub image"
+      style="display: inline; margin: 0 5px;"></a>
+  <a href="./Contact-Me-Form.html" target="_blank"><img src="./contact_me.png"
+      title="Click to fill out a 'Contact Me' Form" alt="Contact Me image" style="display: inline; margin: 0 5px;"></a>
+  <a href="https://run.qwiklabs.com/public_profiles/30ee19d4-fd4a-4cf2-aea7-131d35e4b45d" target="_blank"><img
+      src="./qwiklabs_logo.png" alt="Qwiklabs logo" width="450px" height=50px"></a>
+  <a href="https://www.freecodecamp.org/dionnenoellabarretto" target="_blank"><img src="./freecodecamp.png"
+      alt="FreeCodeCamp logo" width="450px" height="auto"></a>
+  <a href="https://www.codecademy.com/profiles/DenverDionne" target="_blank"><img src="./codeacademy_logo.png"
+      alt="CodeAcademy logo" width="450px" height="50px"></a>
+  </section>
+  <h4> &copy; Copyright 2021 | Dionne Noella Barretto </h4>
+</footer>
 
 <!-- embedded inline javascript for the scroll to the top button in body (see bottom right corner) Script's being added to the end to ensure page load isnt affected-->
 <script>
