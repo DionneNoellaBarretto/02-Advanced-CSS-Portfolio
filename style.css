@@ -50,7 +50,7 @@ nav a {
 
 /* Dropdown Section in Nav Projects */
 /* Dropdown Button */
-.dropbtn {
+ .dropbtn {
   background-color: transparent;
   border: 0.5px dotted var(--laptop-section-background);
   border-radius: 30px;
@@ -156,7 +156,7 @@ footer img{
 }
 
 img:hover{
-  border: 0.9px dotted rgb(58, 57, 57);
+  border: 1.1px double rgb(58, 57, 57);
 }
 
 /* ID Selector(s) */
@@ -225,33 +225,33 @@ img:hover{
   z-index: auto;
 }
 
-.Projects:hover{
+.me:hover, .Projects:hover{
 /* Upon hover, background color changes from lemony yellow to peachy */
 background-color: rgb(250, 228, 216);
 z-index: 20;
-transform: scale(1.1);
+transform: scale(1.5);
 }
 
 #VMworld iframe:hover, #Acclaim img:hover {
   transform: scale(1.3);
   border: 1.5px dashed var(--laptop-nav-foot);
-  left: 600px;
+  left: 300px;
   z-index: 20;
-
 }
 /* CSS for enlarged image */
 .Projects span{
   position: absolute;
   background-color: lightyellow;
   padding: 3px;
-  /* left: -100px; */
+  left: -100px;
   border: 1.5px dashed var(--laptop-nav-foot);
   visibility: hidden;
+  transform: rotate(3deg);
 }
 .Projects span img{
   /* border-width: 0; */
-  max-width: 450px;
-  max-height: 600px;
+  max-width: 300px;
+  max-height: 500px;
   padding: 4px;
 }
 /* CSS for enlarged image on hover */
@@ -275,15 +275,19 @@ transform: scale(1.1);
 .google{
   width:90px;
   height:50px;
-  object-fit:scale-down;
 }
 .rubrik{
   width:110px;
   height:50px;
-  object-fit:scale-down;
 }
+
 .brightness:hover {
-  opacity: 0.50; }
+  opacity: 0.50;
+ }
+
+ .google:hover, .rubrik:hover{
+  transform: scale(0.7);
+ }
 
 /* vmware text formatting */
 .link:visited {
@@ -318,13 +322,9 @@ transform: scale(1.1);
     flex-direction: column;
   }
 
-  .Projects{
-    transition-delay: 2s;
-    transform: rotate(-3);
-  }
-
   .Projects span{
-    border: 5px dashed var(--tablet-nav-foot)
+    border: 5px dashed var(--tablet-nav-foot);
+    border-radius: 20px;
   }
   section{
     background: var(--tablet-section-background);
@@ -332,7 +332,6 @@ transform: scale(1.1);
   .dropbtn{
     border: 0.5px dotted var(--tablet-section-background);
   }
-}
 
 #VMworld iframe:hover, #Acclaim img:hover{
   border: 1.5px dashed var(--tablet-nav-foot);
@@ -348,7 +347,6 @@ transform: scale(1.1);
   }
   .Projects{
     order: 2;
-    transition-delay: 2s;
     transform: scale(0.9);
     transform: skew(-2deg, -3deg);
       }
