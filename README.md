@@ -27,9 +27,6 @@ UNC Boot Camp Submission: 🗂️ [Github Repository](https://github.com/DionneN
 Another Work in Progress Solution: 🗂️ [Github Repository](https://github.com/DionneNoellaBarretto/Week2-HW) | 📄[Github Page](https://dionnenoellabarretto.github.io/Week2-HW/)
 --------------------------------
 
-### Wireframing Mock Up 
-Desktop View: <img src="./WireframeMockUp.png">
-
 ### Grading Requirements
 
 This homework is graded based on the following criteria: 
@@ -58,4 +55,12 @@ Satisfies all of the preceding acceptance criteria
 ✅ Repository contains multiple descriptive commit messages
 ✅ Repository contains quality README file with description, screenshot, and link to deployed application
 ```
+
+### Wireframing Desktop View 
+<img src="./WireframeMockUp.png">
+
+### Mockup - Desktop, Tablet & Mobile Views
+<img src="./screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-DesktopView.png">
+<img src="./screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-TabletView.png">
+<img src="./screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-MobileView.png">
 
