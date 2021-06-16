@@ -28,7 +28,7 @@ Another Work in Progress Solution: 🗂️ [Github Repository](https://github.co
 --------------------------------
 
 ### Wireframing Mock Up 
-<img src="./Wireframe Mock up.png">
+Desktop View: <img src="./WireframeMockUp.png">
 
 ### Grading Requirements
 

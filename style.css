@@ -284,7 +284,7 @@ img:hover{
 }
 /* vmware text formatting */
 .link:visited {
-  color: rgb(252, 13, 200);
+  color: rgb(152, 3, 100);
 }
 .link:hover {
   color: rgb(90, 88, 89);
@@ -292,6 +292,7 @@ img:hover{
 .link:active {
   color: rgb(0, 97, 17);
 }
+
 /* Media Queries for Resonsive UI */
 /* Tablets - header nav footer changes color */
 @media screen and (max-width: 992px) {
