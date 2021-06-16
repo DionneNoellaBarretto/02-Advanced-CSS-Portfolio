@@ -3,13 +3,17 @@
   --laptop-background: #9cdbf8;
   --laptop-nav-foot: #63c6f3;
   --laptop-section-background: #85c8e7;
+  --laptop-select-font: rgb(10, 94, 250);
   --tablet-background: rgb(176, 193, 240);
   --tablet-nav-foot: rgb(155, 178, 243);
   --tablet-section-background: rgb(214, 223, 250);
+  --tablet-select-font: rgb(53, 50, 243);
   --cellphone-background: rgb(154, 243, 236);
   --cellphone-nav-foot: rgb(104, 219, 228);
   --cellphone-section-background: rgb(209, 252, 248);
+  --cellphone-select-font:  rgb(12, 121, 12);
   --text-color: rgb(48, 47, 47);
+
 }
 /* Universal Selector for commonly set attributes*/
 * {
@@ -32,15 +36,16 @@ nav {
  /* Forces elements to the next line if they don't fit */
   flex-wrap: wrap;
   justify-content: space-around;
+  border-top: 1px dashed var(--laptop-select-font);
+  border-bottom: 1px dotted var(--laptop-select-font);
 }
 nav a {
-  color: rgb(10, 94, 250);
+  color:var(--laptop-select-font);
   padding: 14px 20px;
   text-decoration: none;
   font-size: 28px;
   font-weight: bold;
-  border: 2px dotted;
-  border-radius: 70px;
+
 }
 /* Dropdown Section in Nav Projects */
 /* Dropdown Button */
@@ -126,6 +131,7 @@ footer {
   color: var(--text-color);
   display: inline-block;
   width: 100%;
+  border-top: 1px dashed var(--laptop-select-font);
 }
 footer img{
   border-radius: 25px;
@@ -135,6 +141,7 @@ footer img{
   align-items: baseline;
   width: 10%;
 }
+
 img:hover{
   border: 1.1px double rgb(58, 57, 57);
 }
@@ -160,6 +167,13 @@ img:hover{
  /* Custom css border: https://kovart.github.io/dashed-border-generator/ */
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='lightgrey' stroke-width='6' stroke-dasharray='15%2c 15%2c 1' stroke-dashoffset='74' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 30px;
+}
+
+#Preview_Projects p {
+  text-align: center;
+  font-size: 10px;
+  color: rgb(10, 94, 250);
+
 }
 /* Scroll to the top / Scroll to the bottom quick links*/
 #myBtn {
@@ -294,8 +308,8 @@ img:hover{
       flex-direction: column;
       order: 2;
  }
-  h2 span, nav a, .dropdown-content a {
-      color: rgb(53, 50, 243) !important;
+  h2 span, nav a, .dropdown-content a, #Preview_Projects p {
+      color: var(--tablet-select-font) !important;
  }
   .me, .Projects{
       border-color: var(--tablet-nav-foot);
@@ -314,6 +328,7 @@ img:hover{
   #VMworld iframe:hover, #Acclaim img:hover{
       border: 1.5px dashed var(--tablet-nav-foot);
  }
+
  /* Cellphones - header navbar footer changes color */
   @media screen and (max-width: 768px) {
       header,aside, .dropdown-content {
@@ -332,8 +347,8 @@ img:hover{
           flex-direction: column;
           order: 1;
      }
-      h2 span, nav a, .dropdown-content a {
-          color: rgb(12, 121, 12) !important;
+      h2 span, nav a, .dropdown-content a, #Preview_Projects p {
+          color: var(--cellphone-select-font) !important;
      }
       .me, .Projects{
           border-color: var(--cellphone-nav-foot);
@@ -349,5 +364,5 @@ img:hover{
      }
       #VMworld iframe:hover, #Acclaim img:hover{
           border: 1.5px dashed var(--cellphone-nav-foot);
-     }
- }
+     } 
+    }

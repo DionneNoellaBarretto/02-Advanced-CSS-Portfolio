@@ -1,7 +1,7 @@
 :root{
-    --laptop-background: #b380b9;
-    --tablet-background: rgb(155, 178, 243);
-    --cellphone-background: rgb(125, 224, 231);
+    --laptop-background: #9cdbf8;
+    --tablet-background: rgb(176, 193, 240);
+    --cellphone-background: rgb(154, 243, 236);
 }
 
 header {

@@ -40,10 +40,11 @@
         Projects</a></button>
     <h3 class="dropdown-content">
       <a href="#Portfolio">UI Responsive Portfolio (this Page)</a>
+      <a href="#ePortfolio">Responsive ePortfolio</a>
       <a href="#RefactoringCode">Refactoring HW1 Code</a>
       <a href="#FavoriteBand">Favorite Band Fan Page</a>
       <a href="#JS-Game">Javascript Interactive Game</a>
-      <a href="#1stWebsite">Panda Love</a>
+      <a href="#1stWebsite">Panda Facts</a>
     </h3>
   </ol>
   <a href="DionneNoellaBarretto_Resume_3.1.2021.pdf" title="Click to Download" target="_blank">Resume</a>
@@ -78,7 +79,6 @@
         all funnel down into the domain of Cloud Management, Policy and its path of Migration:'The Way to Rise'!
       </p>
       <br>
-      <br>
       <h2 id="Background"> Background</h2>
       <p>I'm an iSchool-Syracuse University(SU), 2015 Post Graduate in Telecommunications and Network Management. During
         my Masters at SU, I was actively involved in formulating the course content, developing lab exercises for the
@@ -95,6 +95,11 @@
     </aside>
     <div id="Preview_Projects">
       <h2>Spotlight Projects</h2>
+      <!-- scrolling text within the main body as referenced here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee -->
+      <marquee direction="up" 
+		width="100%" scrollamount="2" 
+		height="25"><p>Click within each hovered 'Preview' image to be redirected to the project site</p></marquee>
+
       <section id="Portfolio" class="Projects preview">
         <header>UI Responsive Portfolio</header>
         <!-- Linking to self -->
@@ -105,6 +110,17 @@
               src="./WireframeMockUp.png" alt="MockUp Wireframing Image"></a>
         </span>
         <p>This Page</p>
+      </section>
+
+      <section id="Portfolio" class="Projects preview">
+        <header>Responsive ePortfolio</header>
+        <img title="Dionne Noella Barretto's ePortfolio" src="./02-advanced-css-homework-demo.gif" alt="MockUp Gif"
+          width="250px" height="300px">
+        <span>
+          <a href="https://dionnenoellabarretto.github.io/Week2-HW/" target="_blank"><img
+              src="./02-advanced-css-homework-demo.gif" alt="MockUp Gif"></a>
+        </span>
+        <p>An alternate Example (WIP)</p>
       </section>
 
       <section id="RefactoringCode" class="Projects preview">
@@ -149,8 +165,8 @@
       </section>
 
       <section id="1stWebsite" class="Projects preview">
-        <header>MyFirstWebsite</header>
-        <img title="Panda Facts" src="./MyFirstWebsite-PandaLove.png" alt="Panda Facts" width="250px" height="300px">
+        <header>Panda Facts</header>
+        <img title="MyFirstWebsite" src="./MyFirstWebsite-PandaLove.png" alt="Panda Facts" width="250px" height="300px">
         <span>
           <a href="./PandaLove.html" target="_blank"><img src="./MyFirstWebsite-PandaLove.png" alt="Panda Facts"></a>
         </span>
@@ -159,7 +175,8 @@
 
       <section id="Acclaim" class="Projects preview">
         <header>Acclaim Cert Badges</header>
-        <img title="Professionciency Badge Protal" src="./acclaim.png" alt="Acclaim logo" width="250px" height="100px">
+        <a href="https://www.credly.com/users/dionne-noella-barretto/badges" target="_blank">
+        <img title="Professionciency Badge Protal" src="./acclaim.png" alt="Acclaim logo" width="250px" height="100px"></a>
         <p>Personal Learning & Development</p>
       </section>
 
