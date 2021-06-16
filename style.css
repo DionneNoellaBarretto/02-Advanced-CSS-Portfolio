@@ -45,8 +45,8 @@ nav a {
   text-decoration: none;
   font-size: 28px;
   font-weight: bold;
-
 }
+
 /* Dropdown Section in Nav Projects */
 /* Dropdown Button */
 .dropbtn {
@@ -304,6 +304,8 @@ img:hover{
       background-color: var(--tablet-nav-foot);
       flex-direction: column;
       order: 2;
+      border-top: 1px dashed var(--tablet-select-font);
+      border-bottom: 1px dotted var(--tablet-select-font);
  }
   h2 span, nav a, .dropdown-content a, #Preview_Projects p {
       color: var(--tablet-select-font) !important;
@@ -343,6 +345,8 @@ img:hover{
           background-color: var(--cellphone-nav-foot);
           flex-direction: column;
           order: 1;
+          border-top: 1px dashed var(--cellphone-select-font);
+      border-bottom: 1px dotted var(--cellphone-select-font);
      }
       h2 span, nav a, .dropdown-content a, #Preview_Projects p {
           color: var(--cellphone-select-font) !important;
