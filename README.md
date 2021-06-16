@@ -24,6 +24,7 @@ GIVEN a webpage meets accessibility standards
 # DNB's SOLUTION: 
 UNC Boot Camp Submission: 🗂️ [Github Repository](https://github.com/DionneNoellaBarretto/02-Advanced-CSS-Portfolio) | 📄[Github Page](https://dionnenoellabarretto.github.io/02-Advanced-CSS-Portfolio/)
 
+Another Work in Progress Solution: 🗂️ [Github Repository](https://github.com/DionneNoellaBarretto/Week2-HW) | 📄[Github Page](https://dionnenoellabarretto.github.io/Week2-HW/)
 --------------------------------
 
 ### Wireframing Mock Up 
