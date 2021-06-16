@@ -13,8 +13,8 @@
   --cellphone-section-background: rgb(209, 252, 248);
   --cellphone-select-font:  rgb(12, 121, 12);
   --text-color: rgb(48, 47, 47);
-
 }
+
 /* Universal Selector for commonly set attributes*/
 * {
   box-sizing: border-box;
@@ -102,8 +102,6 @@ body {
   margin: 0;
 }
 aside {
- /* display: block;
-  */
   flex: 0 0 25%;
   background-color: var(--laptop-background);
   flex-wrap: wrap;
@@ -116,8 +114,6 @@ main {
 }
 section {
   float: left;
- /* flex-wrap: wrap;
-  */
   background: var(--laptop-section-background);
   padding: 10px;
 }
