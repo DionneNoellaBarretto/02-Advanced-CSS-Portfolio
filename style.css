@@ -47,48 +47,6 @@ nav a {
   font-weight: bold;
 }
 
-/* Dropdown Section in Nav Projects */
-/* Dropdown Button */
-.dropbtn {
-  background-color: transparent;
-  border: 0.5px dotted var(--laptop-section-background);
-  border-radius: 30px;
-}
-/* The container - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: block;
-}
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  justify-content:center;
-  background-color: var(--laptop-background);
-  opacity: 0.85;
-  min-width: 200px;
-  z-index:2;
-}
-/* Links inside the dropdown */
-.dropdown-content a {
-  font-size: 24px;
-  color: rgb(10, 94, 250);
-  padding: 5px 8px;
-  text-decoration: none;
-  display: block;
-}
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color:rgb(250, 228, 216);
-}
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color:lightyellow;
-}
 h5{
   position: absolute;
   top: 0;
@@ -199,6 +157,50 @@ img:hover{
  /* Add a dark-grey background on hover */
 }
 /* Class Selectors */
+
+/* Dropdown Section in Nav Projects */
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  border: 0.5px dotted var(--laptop-section-background);
+  border-radius: 30px;
+}
+/* The container - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  justify-content:center;
+  background-color: var(--laptop-background);
+  opacity: 0.85;
+  min-width: 200px;
+  z-index:2;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-size: 24px;
+  color: rgb(10, 94, 250);
+  padding: 5px 8px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:rgb(250, 228, 216);
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color:lightyellow;
+}
+
 .Projects header{
   border-radius: 50px 50px 0px 0px;
 }
@@ -209,8 +211,6 @@ img:hover{
   border-style: double;
   border-width: 4px;
   border-color: var(--laptop-nav-foot);
- /* border-radius: 50px;
-  */
   text-align: center;
   text-decoration: underline;
   background-color: rgb(250, 247, 216);
@@ -225,7 +225,7 @@ img:hover{
 .me:hover, .Projects:hover{
  /* Upon hover, background color changes from lemony yellow to peachy */
   background-color: rgb(250, 228, 216);
-  z-index: 20;
+  z-index: 30;
   transform: scale(1.5);
 }
 #VMworld iframe:hover, #Acclaim img:hover {
@@ -245,8 +245,6 @@ img:hover{
   transform: rotate(3deg);
 }
 .Projects span img{
- /* border-width: 0;
-  */
   max-width: 300px;
   max-height: 500px;
   padding: 4px;
