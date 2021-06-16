@@ -366,4 +366,5 @@ img:hover{
       #VMworld iframe:hover, #Acclaim img:hover{
           border: 1.5px dashed var(--cellphone-nav-foot);
      } 
-    }
+  }
+}
