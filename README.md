@@ -1,7 +1,7 @@
 # Updated Portfolio Page
 
 ```
-In this Homework, students will apply recently learned core skills including but not limited to: flexbox, media queries, and CSS variables and create a web application from scratch!
+In this Homework, now that we've had some practice with APIs and have a project to share, we'll be updating our portfolio page and other materials to build a website/ Portfolio towards being employer-competitive!
 ```
 
 ### User Story
@@ -12,19 +12,18 @@ AS AN employer I WANT to view a potential employee's deployed portfolio of work 
 ### Acceptance Criteria
 ```
 GIVEN a webpage meets accessibility standards
-✓ WHEN I load their portfolio THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-✓ WHEN I click one of the links in the navigation THEN the UI scrolls to the corresponding section
-✓ WHEN I click on the link to the section about their work THEN the UI scrolls to a section with titled images of the developer's applications
-✓ WHEN I am presented with the developer's first application THEN that application's image should be larger in size than the others
-✓ WHEN I click on the images of the applications THEN I am taken to that deployed application
-✓ WHEN I resize the page or view the site on various screens and devices THEN I am presented with a responsive layout that adapts to my viewport
+✓ Display your contact information. If you don't want to share your personal email or phone number, use a separate email that you will only use for coding, also known as a developer email, and/or a call forwarding service, such as [Google Voice](https://voice.google.com/)
+✓ Have links to your GitHub profile and LinkedIn profile
+✓ Have a link to a downloadable PDF of your resume
+✓ Display at least 2 examples of student work from either deployed projects or homeworks 
+✓ Have a polished, mobile-responsive user interface.
 ```
 
 --------------------------------
 # DNB's SOLUTION: 
-UNC Boot Camp Submission: 🗂️ [Github Repository](https://github.com/DionneNoellaBarretto/02-Advanced-CSS-Portfolio) | 📄[Github Page](https://dionnenoellabarretto.github.io/02-Advanced-CSS-Portfolio/)
+UNC Boot Camp Submission: 🗂️ [Github Repository](https://github.com/DionneNoellaBarretto/Updated_Portfolio_Page) | 📄[Github Page](https://dionnenoellabarretto.github.io/Updated_Portfolio_Page/)
 
-Another Work in Progress Solution: 🗂️ [Github Repository](https://github.com/DionneNoellaBarretto/Week2-HW) | 📄[Github Page](https://dionnenoellabarretto.github.io/Week2-HW/)
+Previous Work in Progress Solution: 🗂️ [Github Repository](https://github.com/DionneNoellaBarretto/02-Advanced-CSS-Portfolio) | 📄[Github Page](https://dionnenoellabarretto.github.io/02-Advanced-CSS-Portfolio/)
 
 --------------------------------
 
@@ -46,7 +45,6 @@ Satisfies all of the preceding acceptance criteria
 ```
 ✅ Application resembles mock-up provided in the homework instructions 
 ```
-<img src="./02-advanced-css-homework-demo.gif">
 
 #### Repository Quality: 13%
 ```
@@ -57,11 +55,13 @@ Satisfies all of the preceding acceptance criteria
 ✅ Repository contains quality README file with description, screenshot, and link to deployed application
 ```
 
-### Wireframing Desktop View 
-<img src="./WireframeMockUp.png">
-
 ### Mockup - Desktop, Tablet & Mobile Views
-<img src="./screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-DesktopView.png">
-<img src="./screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-TabletView.png">
-<img src="./screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-MobileView.png">
+Landing Page with intuitive Hover Capabilities that highlights and upon click moves to that section
+<img src="./supplemental_files/LandingPagewithHoverCapabilities.png">
+Intuitive Project Display Card Layout
+<img src="./supplemental_files/IntuitiveProjectSectionCardLayout.png">
+Tablet Screen View with image highlight border color changing & Skills view appearing column like
+<img src="./supplemental_files/TabletView.png">
+Mobile Screen View
+<img src="./supplemental_files/MobileView.png">
 
