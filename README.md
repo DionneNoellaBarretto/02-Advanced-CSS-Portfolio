@@ -46,7 +46,7 @@ Satisfies all of the preceding acceptance criteria
 ```
 ✅ Application resembles mock-up provided in the homework instructions 
 ```
-<img src="./02-advanced-css-homework-demo.gif">
+<img src="./supplemental files/02-advanced-css-homework-demo.gif">
 
 #### Repository Quality: 13%
 ```
@@ -58,10 +58,10 @@ Satisfies all of the preceding acceptance criteria
 ```
 
 ### Wireframing Desktop View 
-<img src="./WireframeMockUp.png">
+<img src="./supplemental files/WireframeMockUp.png">
 
 ### Mockup - Desktop, Tablet & Mobile Views
-<img src="./screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-DesktopView.png">
-<img src="./screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-TabletView.png">
-<img src="./screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-MobileView.png">
+<img src="./supplemental files/screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-DesktopView.png">
+<img src="./supplemental files/screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-TabletView.png">
+<img src="./supplemental files/screencapture-dionnenoellabarretto-github-io-02-Advanced-CSS-Portfolio-MobileView.png">
 
